@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Site</title>
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d3ee32d4d6.js" crossorigin="anonymous"></script>
+    <!-- tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: '#B4F461',
+                        secondary: '#F9F7F3'
+                    },
+                    fontFamily: {
+                        Lexend: ["Lexend", 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-Lexend">
+    <header class="sticky top-0"></header>
+    <nav class="bg-secondary flex justify-around pt-6 pb-16">
+        <button class="font-bold text-2xl py-3 px-8 bg-primary rounded-lg">Blog</button>
+        <div class="flex items-center justify-center gap-4">
+            <img src="assets/logo.png" alt="">
+            <p class="text-2xl whitespace-nowrap font-bold">Donate Bangladesh</p>
+        </div>
+        <div class="flex items-center justify-center gap-1 text-[#111111B3]">
+            <img src="assets/coin.png" alt="">
+            <span class="text-2xl ml-2">5500</span>
+            <p class="text-2xl">BDT</p>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <section class="container mx-auto">
+            <h3 class="font-bold text-4xl my-8"> Important FAQ <i class="fa-regular fa-circle-question"></i></h3>
+            <!-- accordion -->
+            <div class=" rounded-lg border">
+                <div class="collapse collapse-arrow">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-2xl font-medium">What is Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents
+                            the structure of a webpage so that it can be accessed and manipulated by programming
+                            languages, such as JavaScript. The DOM treats the entire HTML or XML document as a tree of
+                            objects, where each object represents a part of the document (like an element, attribute, or
+                            text).</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow border-t rounded-none">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl font-medium">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                        <p>To select an element from the DOM using JavaScript, there are several methods depending on
+                            how you want to target the element (by ID, class, tag, or selector). Here are the most
+                            commonly used DOM selection methods:
+                            <li>Use document.getElementById() to select an element by its unique ID.</li>
+                            <li>Use document.getElementsByClassName() to select elements by their class name. This
+                                method returns an HTMLCollection (a collection of elements).</li>
+                            <li>Use document.getElementsByTagName() to select elements by their tag name.This also returns an HTMLCollection.</li>
+                            <li>Use document.querySelector() to select the first element that matches a specific CSS
+                                selector (e.g., ID, class, tag, or more complex CSS selectors).</li>
+                            <li>Use document.querySelectorAll() to select all elements that match a specific CSS
+                                selector. This method returns a NodeList, which is similar to an array.</li>
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow border-t rounded-none">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                    <div class="collapse-content">
+                        <p>Event delegation is a technique in the DOM that allows you to handle events at a higher level in the DOM tree rather than attaching event listeners to each individual element. Instead of attaching an event listener to every child element, you attach a single event listener to a parent element, which listens for events triggered by its children due to the way events propagate in the DOM.This technique is particularly useful in scenarios where:
+                            <ol>
+                                <li>1. You have many child elements that need to handle the same event.</li>
+                                <li>2. You expect the number of child elements to grow dynamically (e.g. when adding elements through JavaScript).</li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow border-t rounded-none">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl font-medium">How do you manipulate an elements style & attribute using the DOM?</div>
+                    <div class="collapse-content">
+                        <p>To change the appearance of an element, you can modify its CSS properties. This could include adjusting things like text color, background color, font size, or hiding the element entirely. Instead of editing a style sheet, you directly assign these styles to the element, typically for dynamic or interactive effects.
+                            <li><span class="font-bold">Manipulating Classes: </span>
+                                CSS classes are pre-defined style rules that can be applied to elements. Instead of manually setting each style, you can add or remove CSS classes. This allows you to apply or revoke a whole set of styles at once.</li>
+                            <li><span class="font-bold">Manipulating Attributes: </span>
+                                HTML elements come with attributes like src (for images), href (for links), or alt (for image descriptions). You can modify these attributes to change the element's behavior or content.</li>
+                            <li><span class="font-bold">Manipulating data-* Attributes:</span>
+                                These are custom attributes that store extra information on elements, usually for use with JavaScript. You can dynamically assign values to these attributes or read their values to interact with the element based on the data.</li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
