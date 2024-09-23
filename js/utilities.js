@@ -9,3 +9,9 @@ function getTextValueById(id){
     const inputNumber = Number(inputText);
     return inputNumber;
 }
+
+function getMyBalance(id){
+    const innerText = document.getElementById(id).innerText;
+    const inputNumber = Number(innerText);
+    return inputNumber;
+}
