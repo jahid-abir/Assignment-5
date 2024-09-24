@@ -89,3 +89,5 @@ document.getElementById('nav-donate-btn').addEventListener('click', function () 
     backgroundSet('nav-donate-btn');
     showElement('main-section');
 })
+
+// toggle into blog site

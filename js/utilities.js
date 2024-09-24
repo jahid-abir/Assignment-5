@@ -31,3 +31,6 @@ function timeShow(){
     const currentDate = new Date();
     return currentDate;
 };
+function toggleBlogBtn(){
+    window.location.href = 'blog.html'
+}
