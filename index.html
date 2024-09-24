@@ -35,8 +35,10 @@
 
 <body class="font-Lexend">
     <header class="sticky top-0 backdrop-blur-md">
-        <nav class="bg-secondary flex justify-around pt-6 pb-16">
-            <button onclick="toggleBlogBtn()" class="font-bold text-2xl py-3 px-8 bg-primary rounded-lg">Blog</button>
+        <nav class="bg-secondary md:flex justify-around pt-6 pb-6 space-y-3 md:space-y-0">
+            <div class="flex justify-center items-center">
+                <button onclick="toggleBlogBtn()" class="font-bold text-2xl py-3 px-8 bg-primary rounded-lg">Blog</button>
+            </div>
             <div class="flex items-center justify-center gap-4">
                 <img src="assets/logo.png" alt="">
                 <p class="text-2xl whitespace-nowrap font-bold">Donate Bangladesh</p>
@@ -57,18 +59,18 @@
         </section>
     </header>
     <!-- history section -->
-    <section id="history-section" class="container mx-auto">
+    <section id="history-section" class="container mx-auto hidden">
         <!-- card -->
-        
+
     </section>
     <main id="main-section" class="container mx-auto">
         <!-- card section -->
         <section class="mt-8">
-            <div class="flex p-8 border shadow-md rounded-lg justify-center items-center gap-6">
+            <div class="md:flex p-8 border shadow-md rounded-lg justify-center items-center gap-6">
                 <img class="w-full flex-1" src="assets/noakhali.png" alt="">
                 <div class="flex-1 space-y-8">
                     <button
-                        class="flex items-center justify-center gap-1 text-[#111111B3] bg-[#1111110D] px-4 py-2 rounded-md">
+                        class="flex items-center justify-center mt-3 md:mt-0 gap-1 text-[#111111B3] bg-[#1111110D] px-4 py-2 rounded-md">
                         <img src="assets/coin.png" alt="">
                         <span id="donate-amount" class="text-2xl ml-2">13220</span>
                         <p class="text-2xl">BDT</p>
@@ -86,11 +88,11 @@
         </section>
         <!-- card section 2 -->
         <section class="mt-8">
-            <div class="flex p-8 border shadow-md rounded-lg justify-center items-center gap-6 ">
+            <div class="md:flex p-8 border shadow-md rounded-lg justify-center items-center gap-6 ">
                 <img class="w-full flex-1" src="assets/feni.png" alt="">
                 <div class="flex-1 space-y-8">
                     <button
-                        class="flex items-center justify-center gap-1 text-[#111111B3] bg-[#1111110D] px-4 py-2 rounded-md">
+                        class="flex items-center justify-center mt-3 md:mt-0 gap-1 text-[#111111B3] bg-[#1111110D] px-4 py-2 rounded-md">
                         <img src="assets/coin.png" alt="">
                         <span id="donate-amount-2" class="text-2xl ml-2">10500</span>
                         <p class="text-2xl">BDT</p>
@@ -109,11 +111,11 @@
         </section>
         <!-- card section 3 -->
         <section class="mt-8">
-            <div class="flex p-8 border shadow-md rounded-lg justify-center items-center gap-6 ">
+            <div class="md:flex p-8 border shadow-md rounded-lg justify-center items-center gap-6 ">
                 <img class="w-full flex-1" src="assets/quota-protest.png" alt="">
                 <div class="flex-1 space-y-8">
                     <button
-                        class="flex items-center justify-center gap-1 text-[#111111B3] bg-[#1111110D] px-4 py-2 rounded-md">
+                        class="flex items-center justify-center gap-1 mt-3 md:mt-0 text-[#111111B3] bg-[#1111110D] px-4 py-2 rounded-md">
                         <img src="assets/coin.png" alt="">
                         <span id="donate-amount-3" class="text-2xl ml-2">41000</span>
                         <p class="text-2xl">BDT</p>
@@ -130,6 +132,26 @@
                     <button id="donate-btn-3" class="bg-primary py-4 w-full rounded-lg">Donate Here</button>
                 </div>
             </div>
+        </section>
+        <!-- modal -->
+        <section>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                   <div class="flex flex-col space-y-3 justify-center items-center">
+                    <h3 class="text-4xl font-bold">Congrates!</h3>
+                    <div>
+                        <img class="w-10 h-10" src="assets/coin.png" alt="">
+                    </div>
+                    <p class="py-4">You Have Donate for Human Kind</p>
+                    <h3 class="font-bold text-2xl">Successfully</h3>
+                   </div>
+                    <div>
+                        <form class="flex justify-center items-center mt-3" method="dialog">
+                            <button class="btn">Close Confirmation</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </section>
     </main>
     <script src="js/utilities.js"></script>
