@@ -27,3 +27,7 @@ function showElement(id) {
     document.getElementById('history-section').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden')
 }
+function timeShow(){
+    const currentDate = new Date();
+    return currentDate;
+};
